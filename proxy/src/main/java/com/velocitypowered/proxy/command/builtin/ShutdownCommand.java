@@ -60,7 +60,7 @@ public final class ShutdownCommand {
                 try {
                   reasonComponent = GsonComponentSerializer.gson()
                       .deserializeOrNull(reason);
-                } catch (JsonSyntaxException ignored) {
+                } catch (JsonSyntaxException expected) {
 
                 }
               }
